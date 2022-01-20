@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB2 - CSS</title>
+  <meta charset="utf-8">
+  <!--
+  아래 9열부터 12열까지 CSS 코드가 어떻게 사용되는지 알 수 있는 부분이다.
+  -->
+  <style>
+    a {
+      color:black;
+      text-decoration: none;
+    }
+  </style>
+  <!--
+즉, CSS코드란, <style> </style> 태그 안에 원하는 영역을 지정하고 {} 중괄호를 사용
+하여 마지막에는 ; 세미콜론으로 마무리 짓는 것을 알 수 있다.
+여기서 중괄호 a {}는 우리가 주고싶은 효과를 누구에게 줄 것인가를 선택한다는 점에서
+선택자, selector라고 부른다.
+중괄호 안에 있는 것,즉 Selctor에게 지정될 효과를 효과, Declaration(선언)이라고 부른다.
+; 세미콜론은 하나의 효과(declaration)이 시작되고 끝나는 것을 구분해주는 역할을 한다.
+색깔 변경 효과 = color:원하는색깔;
+밑줄 제거 효과 = text-decoration: none;
+
+  -->
+</head>
+
+<body>
+  <h1><a href="index.html" target="_blank" title="WEB의 대표 페이지">WEB</a></h1>
+  <ol>
+    <li><a href="1 - About HTML.html" target="-blank" title="HTML에 관한 설명">HTML</a></li>
+    <li><a href="2 - About CSS.html" title="CSS에 관한 설명" style="color:red;text-decoration:underline" >CSS</a></li>
+    <li><a href="3.html" target="_blank" title="JavaScript에 관한 설명">JavaScript</a></li>
+  </ol>
+  <!--
+  <h1><a href="index.html" target="_blank" title="WEB의 대표 페이지"><font color="red">WEB</font></a></h1>
+  <ol>
+    <li><a href="1.html" target="-blank" title="HTML에 관한 설명"><font color="red">HTML</font></a></li>
+    <li><a href="2.html" title="CSS에 관한 설명"><font color="red">CSS</font></a></li>
+    <li><a href="3.html" target="_blank" title="JavaScript에 관한 설명"><font color="red">JavaScript</font></a></li>
+  </ol>
+  -->
+  <h2>CSS</h2>
+  - 이제부터는 CSS코드에 대해 공부를 할 것이다. CSS코드는 우리가 알고있는 HTML코드에
+  추가로 CSS라는 언어의 태그를 사용함으로써 만들어지는 것이다.<br><br>
+  - CSS 태그를 추가하는 것 보다 훨씬 더 어렵지만 근본적인 해결책이다.<br><br>
+  - <strong>CSS를 사용함으로써 가장 큰 장점은 "중복의 제거"라는 것이다.</strong><br><br>
+  -웹 브라우저에게 CSS인지 알 수 있게 하는 방법에는 두가지가 있는데,<br>
+   <Strong>하나는 style태그 사용, 다른 하나는 속성을 활용</strong>하는 것이다.<br><br><br>
+
+  <h3>[웹브라우저에게 CSS인지 알수있게 하는 방법]</h3>
+
+  <h3> 1. Style태그 사용</h3>
+  - 우리는 CSS를 사용하기 위해서는 웹브라우저에게 "지금부터 CSS코드를 사용할 것이니 html이<br>
+  아니라, CSS의 문법에 따라 해석해야해"라고 html의 문법으로 말을 해줘야 한다.<br><br>
+  - 즉, CSS의 문법을 해석하라는 이 html 문법은 <strong>(style)(/style)</strong> 이다.<br><br>
+  - Style이라는 태그를 쓰면, 이는 html의 문법인 동시에 웹브라우저에게 <br>
+  <strong>이 style 태그 안쪽에 있는 내용은 CSS니까, CSS라는 언어의 문법에 맞게 해석해서
+  처리 해야 해</strong> 라는 의미를 담고 있다.<br><br>
+  - HTML의 태그 기능을 수백,수천,수만번 할 것을 CSS는 단 하나의 언어로 할 수 있게끔 한다.<br><br>
+  - CSS에서 제일 중요한 것은, <strong>내가 디자인 효과를 주고 싶은 언어를 지정</strong>
+  하여 그 언어와 <strong>연관된 모든 것에 변화를 줄 수 있는 것</strong>이다.<br><br>
+  - <strong>For example<br>
+    (style)a {color:red;}(/style)<br></strong>
+    위의 코드는 = <u>[링크를 의미하는 'a'라는 태그가 있는 모든 글자를 빨간색으로<br>
+    변경하고 싶을 때]</u> 사용하는 CSS언어인 것이다.<br><br>
+  - 즉, CSS언어를 사용할 때는 <strong>무조건 style이라는 태그를 사용한 다음,<br>
+    그 태그 안에서 자신이 원하는 <u>포지션 설정</u>과 그 <u>포지션의 변화를 요구</u>하는<br>
+    CSS 언어를 사용하는 것이다.</strong><br><br>
+  - CSS 언어에서 살펴볼 점은 요구하고 싶은 CSS언어를 <strong>{}
+    이러한 중괄호안에 포함시킨다</strong>는 점과,<br> 그 언어를 끝맺을때는 <strong>;
+    세미콜론을 붙여주고 끝낸다</strong>는 점이다.<br><br>
+  - 즉, CSS코드란, (style) (/style) 태그 안에 원하는 영역을 지정하고 {} 중괄호를 사용
+    하여 마지막에는 ; 세미콜론으로 마무리 짓는 것을 알 수 있다.<br><br>
+  - 여기서 <strong>중괄호 a {}</strong>는 우리가 주고싶은 효과를 누구에게 줄 것인가를 선택한다는 점에서
+    <strong>선택자, selector</strong>라고 부른다.<br><br>
+  - <strong>중괄호 안에 있는 것</strong>,즉 Selctor에게 지정될 효과를 효과, <strong>
+    Declaration(선언)</strong>이라고 부른다.<br><br>
+  - <strong>; 세미콜론은 하나의 효과(declaration)이 시작되고 끝나는 것을 구분해주는 역할</strong>
+    을 한다.
+    <br><br><br>
+
+
+    <h3>2. 속성을 활용하는 법</h3>
+    - <strong>Style이라는 속성</strong>을 사용하면, 그 속성의 값을 웹 브라우저는<br>
+     CSS의 문법에 따라 해석하고, 그 결과를 Style속성이 위치하고 있는 태그에게 적용한다.<br><br>
+
+    - 속성을 사용하는 경우에는, <strong>특정 대상에게만 효과를 주는 것이기 때문에<br> 선택자(selector)인
+      중괄호가 필요 없으며, 단순히<u> Style="" </u>이라는 속성만 부여</strong>하면된다.<br>
+      그렇게 하면 특정 대상에게만 효과 변경을 할 수 있는 것이다.<br><br>
+    - 다만, CSS언어를 속성을 활용하여 사용한다면 중괄호만 사용할 필요가 없다는 것이지<br>
+      <strong>다른 효과를 주기 위해 CSS언어를 사용한면 그 효과를 구분하기 위하여
+      ; 세미클론은 사용해 주어야 한다.</strong><br><br>
