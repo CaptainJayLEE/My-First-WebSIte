@@ -11,6 +11,30 @@
       color:black;
       text-decoration: none;
     }
+    li{
+      font-size: 20px;
+    }
+    ol{
+      color:black;
+    }
+    h1 {
+      font-size:50px;
+      text-align: center;
+    }
+    h2 {
+      font-size:40px;
+      text-align: center;
+    }
+    #active {
+      text-decoration: underline;
+      color: red;
+    }
+    .saw {
+      color:gray;
+    }
+    p{
+      line-height: 230%;
+    }
   </style>
   <!--
 즉, CSS코드란, <style> </style> 태그 안에 원하는 영역을 지정하고 {} 중괄호를 사용
@@ -28,8 +52,8 @@
 <body>
   <h1><a href="index.html" target="_blank" title="WEB의 대표 페이지">WEB</a></h1>
   <ol>
-    <li><a href="1 - About HTML.html" target="-blank" title="HTML에 관한 설명">HTML</a></li>
-    <li><a href="2 - About CSS.html" title="CSS에 관한 설명" style="color:red;text-decoration:underline" >CSS</a></li>
+    <li><a href="1 - About HTML.html" target="-blank" title="HTML에 관한 설명" class="saw">HTML</a></li>
+    <li><a href="2 - About CSS.html" title="CSS에 관한 설명" class="saw" id="active">CSS</a></li>
     <li><a href="3.html" target="_blank" title="JavaScript에 관한 설명">JavaScript</a></li>
   </ol>
   <!--
@@ -41,56 +65,176 @@
   </ol>
   -->
   <h2>CSS</h2>
+  <p>
   - 이제부터는 CSS코드에 대해 공부를 할 것이다. CSS코드는 우리가 알고있는 HTML코드에
-  추가로 CSS라는 언어의 태그를 사용함으로써 만들어지는 것이다.<br><br>
-  - CSS 태그를 추가하는 것 보다 훨씬 더 어렵지만 근본적인 해결책이다.<br><br>
-  - <strong>CSS를 사용함으로써 가장 큰 장점은 "중복의 제거"라는 것이다.</strong><br><br>
+  추가로 CSS라는 언어의 태그를 사용함으로써 만들어지는 것이다.<br>
+  - CSS 태그를 추가하는 것 보다 훨씬 더 어렵지만 근본적인 해결책이다.<br>
+  - <strong>CSS를 사용함으로써 가장 큰 장점은 "중복의 제거"라는 것이다.</strong><br>
   -웹 브라우저에게 CSS인지 알 수 있게 하는 방법에는 두가지가 있는데,<br>
-   <Strong>하나는 style태그 사용, 다른 하나는 속성을 활용</strong>하는 것이다.<br><br><br>
+   <Strong>하나는 style태그 사용, 다른 하나는 속성을 활용</strong>하는 것이다.</p><br><br><br>
+
+
 
   <h3>[웹브라우저에게 CSS인지 알수있게 하는 방법]</h3>
 
+
   <h3> 1. Style태그 사용</h3>
+  <p>
   - 우리는 CSS를 사용하기 위해서는 웹브라우저에게 "지금부터 CSS코드를 사용할 것이니 html이<br>
-  아니라, CSS의 문법에 따라 해석해야해"라고 html의 문법으로 말을 해줘야 한다.<br><br>
-  - 즉, CSS의 문법을 해석하라는 이 html 문법은 <strong>(style)(/style)</strong> 이다.<br><br>
+  아니라, CSS의 문법에 따라 해석해야해"라고 html의 문법으로 말을 해줘야 한다.<br>
+  - 즉, CSS의 문법을 해석하라는 이 html 문법은 <strong>(style)(/style)</strong> 이다.<br>
   - Style이라는 태그를 쓰면, 이는 html의 문법인 동시에 웹브라우저에게 <br>
   <strong>이 style 태그 안쪽에 있는 내용은 CSS니까, CSS라는 언어의 문법에 맞게 해석해서
-  처리 해야 해</strong> 라는 의미를 담고 있다.<br><br>
-  - HTML의 태그 기능을 수백,수천,수만번 할 것을 CSS는 단 하나의 언어로 할 수 있게끔 한다.<br><br>
+  처리 해야 해</strong> 라는 의미를 담고 있다.<br>
+  - HTML의 태그 기능을 수백,수천,수만번 할 것을 CSS는 단 하나의 언어로 할 수 있게끔 한다.<br>
   - CSS에서 제일 중요한 것은, <strong>내가 디자인 효과를 주고 싶은 언어를 지정</strong>
-  하여 그 언어와 <strong>연관된 모든 것에 변화를 줄 수 있는 것</strong>이다.<br><br>
+  하여 그 언어와 <strong>연관된 모든 것에 변화를 줄 수 있는 것</strong>이다.<br>
   - <strong>For example<br>
     (style)a {color:red;}(/style)<br></strong>
     위의 코드는 = <u>[링크를 의미하는 'a'라는 태그가 있는 모든 글자를 빨간색으로<br>
-    변경하고 싶을 때]</u> 사용하는 CSS언어인 것이다.<br><br>
+    변경하고 싶을 때]</u> 사용하는 CSS언어인 것이다.<br>
   - 즉, CSS언어를 사용할 때는 <strong>무조건 style이라는 태그를 사용한 다음,<br>
     그 태그 안에서 자신이 원하는 <u>포지션 설정</u>과 그 <u>포지션의 변화를 요구</u>하는<br>
-    CSS 언어를 사용하는 것이다.</strong><br><br>
+    CSS 언어를 사용하는 것이다.</strong><br>
   - CSS 언어에서 살펴볼 점은 요구하고 싶은 CSS언어를 <strong>{}
     이러한 중괄호안에 포함시킨다</strong>는 점과,<br> 그 언어를 끝맺을때는 <strong>;
-    세미콜론을 붙여주고 끝낸다</strong>는 점이다.<br><br>
+    세미콜론을 붙여주고 끝낸다</strong>는 점이다.<br>
   - 즉, CSS코드란, (style) (/style) 태그 안에 원하는 영역을 지정하고 {} 중괄호를 사용
-    하여 마지막에는 ; 세미콜론으로 마무리 짓는 것을 알 수 있다.<br><br>
+    하여 마지막에는 ; 세미콜론으로 마무리 짓는 것을 알 수 있다.<br>
   - 여기서 <strong>중괄호 a {}</strong>는 우리가 주고싶은 효과를 누구에게 줄 것인가를 선택한다는 점에서
-    <strong>선택자, selector</strong>라고 부른다.<br><br>
+    <strong>선택자, selector</strong>라고 부른다.<br>
   - <strong>중괄호 안에 있는 것</strong>,즉 Selctor에게 지정될 효과를 효과, <strong>
-    Declaration(선언)</strong>이라고 부른다.<br><br>
+    Declaration(선언)</strong>이라고 부른다.<br>
   - <strong>; 세미콜론은 하나의 효과(declaration)이 시작되고 끝나는 것을 구분해주는 역할</strong>
-    을 한다.<br><br>
+    을 한다.<br>
   - 아래 참조 사진을 보면 조금 더 확실히 CSS의 개념에 대해 이해할 수 있을 것이다.<br><br>
-  <img src="AboutCSStag.png" width="75%">
+  <img src="AboutCSStag.png" width="75%"></p><br><br><br>
 
+
+  <h3>2. 속성을 활용하는 법</h3>
+  <p>
+  - <strong>Style이라는 속성</strong>을 사용하면, 그 속성의 값을 웹 브라우저는<br>
+  CSS의 문법에 따라 해석하고, 그 결과를 Style속성이 위치하고 있는 태그에게 적용한다.<br>
+  - 속성을 사용하는 경우에는, <strong>특정 대상에게만 효과를 주는 것이기 때문에<br> 선택자(selector)인
+    중괄호가 필요 없으며, 단순히<u> Style="" </u>이라는 속성만 부여</strong>하면된다.<br>
+    그렇게 하면 특정 대상에게만 효과 변경을 할 수 있는 것이다.<br>
+  - 다만, CSS언어를 속성을 활용하여 사용한다면 중괄호만 사용할 필요가 없다는 것이지<br>
+    <strong>다른 효과를 주기 위해 CSS언어를 사용한면 그 효과를 구분하기 위하여
+    ; 세미클론은 사용해 주어야 한다.</strong></p>
     <br><br><br>
 
 
-    <h3>2. 속성을 활용하는 법</h3>
-    - <strong>Style이라는 속성</strong>을 사용하면, 그 속성의 값을 웹 브라우저는<br>
-     CSS의 문법에 따라 해석하고, 그 결과를 Style속성이 위치하고 있는 태그에게 적용한다.<br><br>
 
-    - 속성을 사용하는 경우에는, <strong>특정 대상에게만 효과를 주는 것이기 때문에<br> 선택자(selector)인
-      중괄호가 필요 없으며, 단순히<u> Style="" </u>이라는 속성만 부여</strong>하면된다.<br>
-      그렇게 하면 특정 대상에게만 효과 변경을 할 수 있는 것이다.<br><br>
-    - 다만, CSS언어를 속성을 활용하여 사용한다면 중괄호만 사용할 필요가 없다는 것이지<br>
-      <strong>다른 효과를 주기 위해 CSS언어를 사용한면 그 효과를 구분하기 위하여
-      ; 세미클론은 사용해 주어야 한다.</strong><br><br>
+  <h3>CSS 속성을 스스로 알아내기</h3>
+  <h3>1.선택자 선택 방법</h3>
+  <p>
+  - 웹페이지에 있는 하나의 태그에 대해 모든 내용을 바꾸고 싶다면, <strong>Style 태그를<Br>
+    사용하여 하나의 html 태그를 정해주고 그 다음 효과를 주면 된다.</strong><br>
+    예를 들면, 링크라는 태그 a가 가지고 있는 모든 내용에 효과를 주기 위해 한꺼번에
+    수정을 하고 싶다면<br>
+  <strong> a {속성:값;}</strong> 이렇게 해주면 된다.<br>
+  만약, 제목이라는 태그 h1이 가지고 있는 그 아래의 모든 내용에 효과를 한꺼번에 주고싶다면<br>
+  <strong> h1 {속성:값;}</strong> 식으로 만들어주면 되는 것이다.</p>
+
+
+  <br><br><br>
+  <h3>2. 속성을 알아내기 위한 검색어</h3>
+  <p>
+  - 우리는 CSS를 이용하여 웹페이지를 디자인 할 것이다.<br>
+  - 그러기 위해서는 인터넷 검색엔진에 <STRONG>기본적으로 들어가야 하는 검색어는 ' CSS '</STRONG>이다.
+  - 그 다음 검색어로는 우리가 어떤 것에 효과를 주고 싶은지 정한것이 들어가야 한다.<br>
+  - 예를 들어, 글씨의 크기에 효과를 주고싶다면 <strong>Text Size</strong> 가 들어가야 한다.<br>
+  - 마지막으로 우리는 <strong>그 효과를 가져다 줄 수 있는 ' 속성 '</strong>에 대해<br>
+    알고싶기에, ' 속성 '을 뜻하는 <strong>Property</strong>가 들어가야 하는 것이다.<br>
+  - 즉, 우리가 글자의 크기를 조절할 수 있는 CSS언어를 찾고 싶다면,<br>
+    검색엔진에 <strong> 'CSS Text Size Property' </strong>라고 검색해야 한다.</p>
+
+
+  <br><br><br>
+  <h3>CSS 선택자를 스스로 알아내는 방법</h3>
+  <h3>1.HTML의 속성 'class'와 그 값 'saw'</h3>
+  <p>
+  - 태그가 중복되는 현상을 막기 위해서는 <strong>Grouping이 필요</strong>하다.<br>
+  - <strong>Html의 속성 [Class=""]</strong><br>
+  - 정해진 약속에 따라 속성의 값을 <strong> [(style) .값 { 효과 } (/style)] </strong>
+    로 작성해야 한다.<br>
+  - 예를 들어서, 지금까지 보았던 페이지들의 <strong>색상을 회색으로 설정하고 싶다면</strong><br>
+    각 태그 내에 in line으로 style 속성을 추가하는 것보다 <strong>Html의 속성인 Class="saw"를 넣어주는 것</strong>이다. <br>
+    그리고 나서 CSS의 Style태그를 사용하여<br>
+    <strong>(style) .saw {gray;} (/style)</strong> 이라고 적어주면<br>
+    <strong>class="saw"라는 html 태그를 가진 모든 속성이 회색으로 변하는 것</strong>이다.<br>
+  - 여기서 알 수 있는 것은 style 태그 내에서 단순히 class값 saw에 대하여<br>
+    <strong>(style)saw{gray;}(/style)</strong>라고 적어주는 것이 아니라<br>
+    <strong>(style)<u>.saw</u>{gray;}(/style)</strong>이라고 적는 것이다.<br>
+  - 그렇다면 class 값 saw에 대하여 <strong>맨 앞에 .이 붙는다는 것</strong>이다.,<br>
+    Class라는 것은 같이 묶여지는<strong>grouping하다, 묶는다는 의미가 포함</strong>되어 있는데,<br>
+    이 Class가 가지고 있는 값에 대하여 CSS인 Style 태그 내에서는<br>
+    <strong>무조건 값 앞에 .을 붙여야 하는 것이다.</strong></p>
+
+
+  <br><br><br>
+  <h3>2.Class와 그 값 'active'</h3>
+  <p>
+  - 위에서 설명한 Class에는 단순히 값이 하나만 있는 것이 아니라 여러개를 넣을 수 있다.<br>
+    그리고 마찬가지로 <strong>다른 값들도 style태그 내에 적용하기 위해서는 맨 앞에 .을 붙여야 한다.</strong><br>
+  - 예를 들어서 지금까지 보았던 페이지를 회색으로 설정하기 위해 <strong>어떠한 태그 내의 속성으로 class.saw</strong>
+    라고 정해줬고<br>
+    <strong>Style 태그 내에 (style).saw{color:gray;}(/style)</strong>라고 표시를 했다.<br>
+  - 만약, 현재 보고 있는 페이지를 빨간색으로 표시하고, 밑줄을 긋고 싶다면 어떠한 태그 내에 <strong>class.saw active</strong>
+    라고 표시를 한 후<br>
+    <strong>Style태그 내에서는 (style).active{color:red; text-decoration: underline;}(/style)</strong>
+    라고 표시를 해주면 되는 것이다.<br></p>
+
+
+  <br><br><br>
+  <h3>3. Class의 정의</h3>
+  <p>
+  - 즉, 위의 내용을 토대로 우리가 알 수 있는 점은<br>
+  - Style 태그 내에서 Class 선택자와 Tag 선택자가 붙으면 <strong>Class선택자가 이긴다</strong><br>
+  - Class 속성의 값으로는 <strong>여러가지가 올 수 있으며 띄어쓰기로 구분한다는 것</strong><br>
+  - Style태그 내에는 <strong>Class라는 속성은 들어가지 않는다는 것</strong><br>
+  - Style태그 내에는 <strong>그 속성의 값을 모두 적을 필요 없이, 필요한 값만 적으면 된다는 것</strong><br>
+  - <strong>Class 속성의 값을 style태그 내에 적을 때는 무조건 앞에 .을 붙인다는 것이다.</strong><br>
+  - 반면 Class 속성은 <strong>순서의 영향을 받으며, 보다 가까이에 있는 값의 영향이 더 크다.</strong><br>
+  - 그렇기 때문에 Class 속성을 사용하는 것은 순서를 맞춰야하는 부담감 때문에 어려운 경우가 있다.
+    그래서 등장하는 더 쉬운 방법은 <strong> 'id 선택자' </strong>이다.</p>
+
+
+  <br><br><br>
+  <h3>4. id 선택자</h3>
+  <p>
+  - Class 선택자(속성)가 style 태그 내에서 순서에 맞춰야 한다는 부담감을 덜어줄 수 있는
+   선택자가 바로 id 선택자(속성)이다.<br>
+  - id 선택자(속성)를 적는 방법은 <strong> id="" </strong>이다.<br>
+    만약, <strong>어떠한 태그 내에서 id 선택자(속성)가 class 선택자(속성)보다 뒤에 오더라도<br>
+    Style 태그 내에서 id 선택자(속성)를 class 선택자(속성) 보다 앞에 두게 된다면<br>
+    id 선택자(속성)가 먼저 효과를 받게 되는 것</strong>이다.
+  - id 선택자는 <strong>일반 html태그 내에서의 필기법과 Style 태그 내에서의 필기법이 다르다.</strong><br><br>
+  - a. 일반 html 태그 내의 id 선택자(속성) 표기법 = <strong>id="값"</strong><br>
+  - b. style 태그 내의 id 선택자(속성) 표기법 = <strong>(style)#값{효과;}(/style)</strong><br><br>
+    위에 처럼 표기되는 것이다.<br>
+  - 그럼 예를 한번 들어보겠다.<br>
+    어떠한 태그내의 id 선택자(속성)의 값을 <strong>id="active"</strong> 라고 정해놓고
+    빨간색으로 색을 변경하고 싶다면<br>
+    Style 태그 내에서는 <strong>#active {color:red;}</strong>이라고 입력해야하는 것이다.<br>
+  - <strong>즉, id 선택자(속성)의 어떠한 값이든 Style태그 내에서는 무조건 맨 앞에 #을 붙여줘야 하는 것이다.</strong></p>
+
+  <br><br><br>
+  <h3>5. id 선택자의 정의</h3>
+  <p>
+  - id 선택자와 class 선택자가 붙으면 <strong>id 선택자가 이긴다.</strong><br>
+  - Style 태그 내에서 <strong>강한 순서</strong>로 본다면 <strong><br>
+    Id 선택자 > Class 선택자 > Tag 선택자</strong> 순이다.<br>
+  - <Strong>Id 선택자가 강한 이유는, Id의 값은 중복되면 안되고 단 한번만 등장해야하기 떄문이다.</strong>
+  - 예를 들어 <strong>id 값으로 id="active"를 한번 사용했다면 같은 문서(웹페이지) 안의
+    다른 곳에서는 더 이상 같은 active 값이 나오면 안되는 것</strong>이다.<br>
+  - 그렇기 때문에 <strong>선택자의 값을 단 한번밖에 사용하지 못하는 id태그</strong>보다<br>
+    <strong>tag선택자가 훨씬 더 포괄적</strong>인 것이며 <strong>id선택자가 훨씬 더 구체적</strong>이기 때문에
+    <strong>id 선택자가 우선순위가 높은 것이다.</strong></p>
+
+
+    <br><br><br>
+    <h3>6. 선택자를 알아내기 위한 검색어</h3>
+    - 검색엔진에 검색어로 <strong>'CSS Selector'</strong>라고 검색하면 되고 아래의 주소를 참조해도 된다.<br>
+    - <a href="https://www.w3schools.com/cssref/css_selectors.asp" id="active"
+    style="font-size:20px;">CSS Selector 종류</a><br><br>
