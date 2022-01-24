@@ -4,60 +4,76 @@
 <title>WEB-Welcome</title>
 <meta charset="utf-8">
     <style>
-      body{
-        margin:0;
-        padding: 10px;
-      }
-      a {
-        color:black;
-        text-decoration: none;
-      }
-      li{
-        font-size: 20px;
-      }
-      ol{
-        color:black;
-        border-right: 1px solid gray;
-        width: 100px;
-        margin: 0;
-        padding: 20px
-      }
-      h1 {
-        font-size:50px;
-        text-align: center;
-        border-bottom: 1px solid gray;
-        margin: 0;
-        padding: 20px
-      }
-      h2 {
-        font-size:40px;
-        text-align: center;
-      }
-      #active {
-        text-decoration: underline;
-        color: red;
-      }
-      .saw {
-        color:gray;
-      }
-      p{
-        line-height: 230%;
-      }
+    body{
+      margin:0;
+      padding: 10px;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    li{
+      font-size: 20px;
+      text-decoration: underline;
+    }
+    ol{
+      color:black;
+      border-right: 1px solid gray;
+      width: 100px;
+      margin: 0;
+      padding: 20px
+    }
+    h1 {
+      font-size:50px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0;
+      padding: 20px
+    }
+    h2 {
+      font-size:40px;
+      text-align: center;
+    }
+    #active {
+      color: red;
+    }
+    p{
+      line-height: 230%;
+    }
+    .midtitle {
+      font-size: 24px;
+      color: red;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left: 33px;
+      font-style: italic;
+    }
+    #grid #article{
+      padding-left:25px;
+    }
     </style>
 </head>
 
 <body>
   <h1><a href="index.html" target="_blank" title="WEB의 대표 페이지" id="active">WEB</a></h1>
+ <div id="grid">
   <ol>
     <li><a href="1 - About HTML.html" target="-blank" title="HTML에 관한 설명">HTML</a></li>
     <li><a href="2 - About CSS.html" title="CSS에 관한 설명">CSS</a></li>
     <li><a href="3.html" target="_blank" title="JavaScript에 관한 설명">JavaScript</a></li>
   </ol>
+  <div id="article">
   <h2>WEB</h2>
   <h3>안녕하세요 WEB의 대표페이지 입니다.</h3>
   <p> 우리 페이지는 WEB과 관련된 컴퓨터 언어 <strong>HTML, CSS, JAVASCRIPT</strong>
   <br>를 설명하는 홈페이지이며 아직까지 페이지 준비단계에 있습니다.<br>
   많은 관심 부탁드립니다. 감사합니다.<br>
   from. Ricardo Jay.</p>
+</div>
+</div>
 </body>
 </html>

@@ -4,317 +4,326 @@
 <title>WEB1 - html</title>
 <meta charset="utf-8">
   <style>
-    body{
-      margin:0;
-      padding: 10px;
-    }
-    a {
-      color:black;
-      text-decoration: none;
-    }
-    li{
-      font-size: 20px;
-    }
-    ol{
-      color:black;
-      border-right: 1px solid gray;
-      width: 100px;
-      margin: 0;
-      padding: 20px
-    }
-    h1 {
-      font-size:50px;
-      text-align: center;
-      border-bottom: 1px solid gray;
-      margin: 0;
-      padding: 20px
-    }
-    h2 {
-      font-size:40px;
-      text-align: center;
-    }
-    #active {
-      text-decoration: underline;
-      color: red;
-    }
-    .saw {
-      color:gray;
-    }
-    p{
-      line-height: 230%;
-    }
-    .midtitle {
-      font-size: 24px;
-    }
+  body{
+    margin:0;
+    padding: 10px;
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  li{
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  ol{
+    color:black;
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0;
+    padding: 20px
+  }
+  h1 {
+    font-size:50px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 20px
+  }
+  h2 {
+    font-size:40px;
+    text-align: center;
+    color:red;
+  }
+  #active {
+    color: red;
+  }
+  p{
+    line-height: 230%;
+  }
+  .midtitle {
+    font-size: 24px;
+    color: red;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    padding-left: 33px;
+    font-style: italic;
+  }
+  #grid #article{
+    padding-left:25px;
+  }
   </style>
 </head>
-
 <body>
-  <h1><a href="index.html" target="_blank" title="WEB의 대표 페이지">WEB</a></h1>
-  <ol>
-    <li><a href="1 - About HTML.html" target="-blank" title="HTML에 관한 설명" class="saw" id="active">HTML</a></li>
-    <li><a href="2 - About CSS.html" title="CSS에 관한 설명">CSS</a></li>
-    <li><a href="3.html" target="_blank" title="JavaScript에 관한 설명">JavaScript</a></li>
-  </ol>
+<h1><a href="index.html" target="_blank" title="WEB의 대표 페이지">WEB</a></h1>
+   <div id="grid">
+      <ol>
+        <li><a href="1 - About HTML.html" target="-blank" title="HTML에 관한 설명" id="active">HTML</a></li>
+        <li><a href="2 - About CSS.html" title="CSS에 관한 설명">CSS</a></li>
+        <li><a href="3.html" target="_blank" title="JavaScript에 관한 설명">JavaScript</a></li>
+      </ol>
+   <div id="article">
+      <h2>HTML</h2>
 
-  <h2>HTML</h2>
+      <h3> [HTML의 기본적인 4가지 태그]</h3>
 
+      <p> 위에서 볼 수 있는 html제목의 태그는 보통 h1부터 h6까지 태그를 나눌 수 있으며
+      <br>이는, <strong>제일 큰 대제목 h1부터 제일 작은 소제목인 h6까지
+      <u>차례로 제목의 크기가 작아진다.</u></strong>
+      <br><br><strong> strong 태그는 글자를 강조표시하는
+      태그라고 볼 수 있다.
+      <br> <u>또한 U 태그는 밑줄을 치게 만든다 </u></strong>
+      </p>
+      <p>여기서 우리가 또 알 수 있는 태그가 두개 있다.
+      <br>하나는, <strong><u>br태그</u></strong>라는 것인데
+      br태그는 <strong><u>줄바꿈을 하게끔 도와주는 태그</u></strong>이며
+      <br> 또 하나는
+      <strong><u>문단을 나눌 수 있도록 도와주는 p태그</u></strong>라는 것이다.</p>
 
+      <p> 여기서 br태그는 중요한 점이 두개 있는데,
+      <br> 바로 다른 태그들과 다르게 <strong> 열리는 태그와 닫히는 태그가
+      따로 없이,<br> 단순히 <u>하나의 태그로만</u> 이루어져있다는 점이다.</strong>
+      <br> 또한, <strong><u>br태그</u></strong>는
+      하나를 쓰던 두개를 쓰던 더 많이 쓰던 상관 없지만
+      <strong>여러개를 쓰면 쓸 수록 간격이 더 벌어진다.</strong></p>
 
+      <p>여기서 br태그와 p태그를 비교했을 때, p태그는 단점이 있다. <br>줄바꿈을 많이 하고
+      싶다면 br태그를 여러번 사용하면 되지만, <br><<strong> p태그는 <u>정해져있는
+      여백만큼만 벌어지기 때문에</u> 시각적으로 자유도가 좀 떨어진다.</strong>
+      <br>그래서 우리는 CSS라는 프로그래밍 언어를 배워야하는 것이다.</p>
 
-  <h3> [HTML의 기본적인 4가지 태그]</h3>
-
-  <p> 위에서 볼 수 있는 html제목의 태그는 보통 h1부터 h6까지 태그를 나눌 수 있으며
-  <br>이는, <strong>제일 큰 대제목 h1부터 제일 작은 소제목인 h6까지
-  <u>차례로 제목의 크기가 작아진다.</u></strong>
-  <br><br><strong> strong 태그는 글자를 강조표시하는
-  태그라고 볼 수 있다.
-  <br> <u>또한 U 태그는 밑줄을 치게 만든다 </u></strong>
-  </p>
-  <p>여기서 우리가 또 알 수 있는 태그가 두개 있다.
-  <br>하나는, <strong><u>br태그</u></strong>라는 것인데
-  br태그는 <strong><u>줄바꿈을 하게끔 도와주는 태그</u></strong>이며
-  <br> 또 하나는
-  <strong><u>문단을 나눌 수 있도록 도와주는 p태그</u></strong>라는 것이다.</p>
-
-  <p> 여기서 br태그는 중요한 점이 두개 있는데,
-  <br> 바로 다른 태그들과 다르게 <strong> 열리는 태그와 닫히는 태그가
-  따로 없이,<br> 단순히 <u>하나의 태그로만</u> 이루어져있다는 점이다.</strong>
-  <br> 또한, <strong><u>br태그</u></strong>는
-  하나를 쓰던 두개를 쓰던 더 많이 쓰던 상관 없지만
-  <strong>여러개를 쓰면 쓸 수록 간격이 더 벌어진다.</strong></p>
-
-  <p>여기서 br태그와 p태그를 비교했을 때, p태그는 단점이 있다. <br>줄바꿈을 많이 하고
-  싶다면 br태그를 여러번 사용하면 되지만, <br><<strong> p태그는 <u>정해져있는
-  여백만큼만 벌어지기 때문에</u> 시각적으로 자유도가 좀 떨어진다.</strong>
-  <br>그래서 우리는 CSS라는 프로그래밍 언어를 배워야하는 것이다.</p>
-
-  <br>이렇게 우리는 네가지 태그인
-  <br><strong> 1. 제목과 순차적인 크기를 나타내는 <u>h1~h6 태그</u></strong>
-  <br><strong> 2. 글씨를 강조표시하는 <u>strong 태그</u></strong>
-  <br><strong> 3. 줄바꿈을 도와주는 <u>br 태그</u></strong>
-  <br><strong> 4. 문단을 나눌 수 있도록 하는 <u>p태그</u></strong>
-  <br>들을 배워보았다.
+      <br>이렇게 우리는 네가지 태그인
+      <br><strong> 1. 제목과 순차적인 크기를 나타내는 <u>h1~h6 태그</u></strong>
+      <br><strong> 2. 글씨를 강조표시하는 <u>strong 태그</u></strong>
+      <br><strong> 3. 줄바꿈을 도와주는 <u>br 태그</u></strong>
+      <br><strong> 4. 문단을 나눌 수 있도록 하는 <u>p태그</u></strong>
+      <br>들을 배워보았다.
 
 
 
-  <br><br><br><h3>[속성과 img태그]</h3>
-  <br>이제 우리는 속성이라고 하는 태그의 심화된 문법과 img를 공부 할 것이다.
-  <br><strong>이미지를 웹페이지에 포함시킬때</strong> 사용하는 태그의 이름은
-  <strong><u>img</u></strong> 이다.
-  <br><br>
-  그런데 단순히, img만 쓴다고 사진이 삽입이 되는 것이 아니다.
-  <br>img 에다가 어떤 이미지인지 알려주도록
-  <strong><u>약속된 속성 source=""(약자 src="")</u></strong>를
-  <br><strong>(img source또는src="")</strong>식으로 적고
-  <br><strong><u>따옴표 사이("")에다가 원하는 이미지의 주소</u></strong>를 적어준다.
-  <br>그러면 웹브라우저는 이미지로써 표현을 시켜준다.
+      <br><br><br><h3>[속성과 img태그]</h3>
+      <br>이제 우리는 속성이라고 하는 태그의 심화된 문법과 img를 공부 할 것이다.
+      <br><strong>이미지를 웹페이지에 포함시킬때</strong> 사용하는 태그의 이름은
+      <strong><u>img</u></strong> 이다.
+      <br><br>
+      그런데 단순히, img만 쓴다고 사진이 삽입이 되는 것이 아니다.
+      <br>img 에다가 어떤 이미지인지 알려주도록
+      <strong><u>약속된 속성 source=""(약자 src="")</u></strong>를
+      <br><strong>(img source또는src="")</strong>식으로 적고
+      <br><strong><u>따옴표 사이("")에다가 원하는 이미지의 주소</u></strong>를 적어준다.
+      <br>그러면 웹브라우저는 이미지로써 표현을 시켜준다.
 
-  <br><br> 그런데 이미지의 파일이 너무 크다고 판단이 될 경우에는
-  <br> 약속된 속성 (img source또는src="")에 추가로 또 다른 속성인
-  <strong>width=""</strong>를
-  <br><strong>(img source또는src="" width="")식으로</strong> 적고
-  <br><strong><u> width의 따옴표 사이("")에다가 사진의 크기(대략 450또는 100%)를
-  </u></strong> 적어준다.
+      <br><br> 그런데 이미지의 파일이 너무 크다고 판단이 될 경우에는
+      <br> 약속된 속성 (img source또는src="")에 추가로 또 다른 속성인
+      <strong>width=""</strong>를
+      <br><strong>(img source또는src="" width="")식으로</strong> 적고
+      <br><strong><u> width의 따옴표 사이("")에다가 사진의 크기(대략 450또는 100%)를
+      </u></strong> 적어준다.
 
-  <br><br> 즉 (img <strong>src="coding.jpg"</strong>  <strong>width="100%"</strong>)에서
-  <br>굵게 표시된 이 부분들을 <strong><u>속성</u></strong>,
-  영어로 <strong> Attribute </strong>라고 하는 것이며
+      <br><br> 즉 (img <strong>src="coding.jpg"</strong>  <strong>width="100%"</strong>)에서
+      <br>굵게 표시된 이 부분들을 <strong><u>속성</u></strong>,
+      영어로 <strong> Attribute </strong>라고 하는 것이며
 
-  <br><br>속성은
-  <br>(img <strong>width="100%"</strong>  <strong>src="coding.jpg"</strong>
-  <br> 이렇게 위치는 아무런 상관이 없으며 <strong>아무 위치에나 사용할 수 있다.</strong>
+      <br><br>속성은
+      <br>(img <strong>width="100%"</strong>  <strong>src="coding.jpg"</strong>
+      <br> 이렇게 위치는 아무런 상관이 없으며 <strong>아무 위치에나 사용할 수 있다.</strong>
 
-  <br><br><strong>즉, <u>속성</u>이란
-  <br>태그가 태그의 이름만으로 정보가 부족할 때에
-  <u>속성을 통해서 더 많은 의미를 부가</u>할 수 있게 된 것이다.</strong>
-  <br><br>
-  <img src="html.jpg" width="50%">
-
-
-
-  <br><br><br><h3>[부모,자식태그]</h3><br>
-
-
-  <h3>1. li,ul,ol 태그</h3>
-  <br>태그가 서로 포함관계로 연관되어 있을 때 포함하고 있는 태그를
-  <br><strong>부모태그</strong>, 포함된 태그를 <strong>자식태그</strong>라고 한다.
-  <br><br><strong>(parent)
-    <br>(child)(/child)
-  <br>(/parent)</strong>
-  <br><br> 이런 형식이라고 생각하면 된다.
-  <br><br><strong>목차를 만드는 법 = (li)abcdef(/li)</strong>
-  <br><br> <strong>li태그</strong>의 부모인 <strong>ul태그</strong>가 등장한다.
-  <br> ul태그란 li태그의 부모태그이자,
-  <br>li와 같은 항목들이 어디서부터 어디까지 연관된 항목인지 <strong><u>경계를 짓기 위한,
-  <br>Grouping을 하기 위한 부모태그가 필요한 것</u></strong>이다.
-  <br><br>그래서 li태그는 부모태그인 ul을 갖고 있으며, 반대로 ul태그는 반드시 자식태그인
-  <br>li태그를 가지고 있다는 것을 기억해야 한다.
-  <br><br>
-  <strong>추가로 ul태그를 사용할 경우에는,
-  <u>리스트의 앞 부분에 숫자 대신 항목화 하는 점이 따라온다.</u></strong>
-  <br><br>
-  그렇다면, 항목화 하는 점 대신 숫자를 붙이기 위해선 어떤 태그가 필요할까?
-  <br><br>바로, li태그의 또 다른 부모태그로 등장하는 <strong>ol태그</strong>이다.
-  <br>ol태그는 li태그로 인해 리스트화 되어 있는 항목들의 순서를
-  <br><strong>자동으로 넘버링 되게 하는 역할이다</strong>
-  <br><br>즉, <u>ul</u>이라는 태그와 <u>ol</u>이라는 태그는 <strong>공통적으로 l을 가지고 있다.</strong>
-  <br>이, l의 약자는<strong>list</strong>이며
-  <br>ol은 <strong><u>Ordered List</u></strong>의 약자이다.
-  <br>반면, ul은 <strong><u>부정을 뜻하는 un이 들어간 unordered list</u></strong>의 약자이다.
-
-
-  <br><br><br>
-  <h3>2. table,tr,td 태그</h3>
-  <br>
-  또 다른 부모자식태그로는 <strong>표를 작성는 <u>table태그</u>가 존재한다.</strong>
-  <br>이 table태그의 경우에는 총 <strong>3가지가 같이 다니는 태그</strong>로 구성되어 있는데
-  <br><br><strong>
-  (table)<br>
-    (tr)<br>
-      (td)abcd(/td)<br>
-      (td)~~%(/td)<br>
-    (/tr)<br>
-    (tr)<br>
-      (td)efgh(/td)<br>
-      (td)~~%(/td)<br>
-    (/tr)<br>
-    (tr)<br>
-      (td)ijkl(/td)<br>
-      (td)~~%(/td)<br>
-    (/tr)<br>
-  (/table)<br></strong>
-  <br>
-  이러한 형식으로 구성되어 있다.<br>
-  즉, 이를 활용하여 표를 만들 수 있는 것인데, 아래에 표를 작성해보도록 하겠다.<br>
-  <br>
-  <table>
-    <tr>
-      <td>head</td>
-      <td>98.1%</td>
-    </tr>
-    <tr>
-      <td>body</td>
-      <td>97.9%</td>
-    </tr>
-    <tr>
-      <td>html</td>
-      <td>99.1%</td>
-    </tr>
-  </table>
-  <br><br>
-  <img src="table.png" width="50%">
-
-  <br><br>즉, 위와 같이 표가 만들어지는 것이다.<br><br>
-  이 구성에 대해서 자세히 설명하자면 다음과 같다.<br>
-  표를 작성하기 위해 제일 <strong>머리와 꼬리가 되는 태그는 <u>table 태그</u></strong>이며<br>
-  테이블의 <strong> 행을 구분 짓는 태그는 <u>tr태그</u>로<br>
-  tr태그 속에 <u>td태그</u>를 사용함으로써 <u>왼쪽 열부터 순서대로 내용을 채워 나가는 것</u>이다.
-  </strong><br><br>
-  이렇게 tr태그 속에 td태그를 다 채웠다면, <br>
-  그 다음 <strong>새로운 tr태그를 시작함으로써
-  <u>또 다른 행을 점점 채워나가고</u>,
-  마찬가지로 <u>td태그를 그 속에 또 추가함으로써 열도 채워 나가는 것</u></strong>이다.<br>
-  이러한 과정을 다 거치고 <strong>표가 완성되고 나면 <u>마지막에 table 태그로
-  닫아주면서 표를 완성시키는 것</u>이다.</strong>
-  <br><br><br>
+      <br><br><strong>즉, <u>속성</u>이란
+      <br>태그가 태그의 이름만으로 정보가 부족할 때에
+      <u>속성을 통해서 더 많은 의미를 부가</u>할 수 있게 된 것이다.</strong>
+      <br><br>
+      <img src="html.jpg" width="50%">
 
 
 
-  <h3>[문서의 구조와 슈퍼스타들]</h3>
-  <br>
+      <br><br><br><h3>[부모,자식태그]</h3><br>
 
 
-  <h3>1. 제목을 표시하는 방법 - title태그를 사용</h3>
-  <br>title태그는 <strong>인터넷 창의 <u>제목</u></strong>으로 표시가 되는데,
-  <br>이 title태그는 웹페이지의 제목을 사용자에게 명시적으로 알려줄 수 있을 뿐만 아니라
-  <br>검색엔진과 같은 기계들은 이 title이라는 것을 책으로 치면 책 표지와 같은 정보로서 사용한다.
-  <br><br>
+      <h3>1. li,ul,ol 태그</h3>
+      <br>태그가 서로 포함관계로 연관되어 있을 때 포함하고 있는 태그를
+      <br><strong>부모태그</strong>, 포함된 태그를 <strong>자식태그</strong>라고 한다.
+      <br><br><strong>(parent)
+        <br>(child)(/child)
+      <br>(/parent)</strong>
+      <br><br> 이런 형식이라고 생각하면 된다.
+      <br><br><strong>목차를 만드는 법 = (li)abcdef(/li)</strong>
+      <br><br> <strong>li태그</strong>의 부모인 <strong>ul태그</strong>가 등장한다.
+      <br> ul태그란 li태그의 부모태그이자,
+      <br>li와 같은 항목들이 어디서부터 어디까지 연관된 항목인지 <strong><u>경계를 짓기 위한,
+      <br>Grouping을 하기 위한 부모태그가 필요한 것</u></strong>이다.
+      <br><br>그래서 li태그는 부모태그인 ul을 갖고 있으며, 반대로 ul태그는 반드시 자식태그인
+      <br>li태그를 가지고 있다는 것을 기억해야 한다.
+      <br><br>
+      <strong>추가로 ul태그를 사용할 경우에는,
+      <u>리스트의 앞 부분에 숫자 대신 항목화 하는 점이 따라온다.</u></strong>
+      <br><br>
+      그렇다면, 항목화 하는 점 대신 숫자를 붙이기 위해선 어떤 태그가 필요할까?
+      <br><br>바로, li태그의 또 다른 부모태그로 등장하는 <strong>ol태그</strong>이다.
+      <br>ol태그는 li태그로 인해 리스트화 되어 있는 항목들의 순서를
+      <br><strong>자동으로 넘버링 되게 하는 역할이다</strong>
+      <br><br>즉, <u>ul</u>이라는 태그와 <u>ol</u>이라는 태그는 <strong>공통적으로 l을 가지고 있다.</strong>
+      <br>이, l의 약자는<strong>list</strong>이며
+      <br>ol은 <strong><u>Ordered List</u></strong>의 약자이다.
+      <br>반면, ul은 <strong><u>부정을 뜻하는 un이 들어간 unordered list</u></strong>의 약자이다.
 
 
-  <h3>2. 웹페이지에서 문자가 깨지는 경우를 방지</h3><br>
-  에디터로 작성한 파일을 웹브라우저를 통해 열 때,<strong>파일에 작성한 문자와 실제로 출력되는 문자가<br>
-  다른 경우</strong>를 종종 마주칠 때 있다. 이는, 컴퓨터가 문자를<br>
-  utf-8과 같은 <strong>여러가지 입력체계의 약속을 정하고 있기 때문</strong>이다.<br>
-  만약 에디터로 편집할 때, <strong>우리가 utf-8이라는 입력체계로 작성을하고 저장을 했다면,<br>
-  컴퓨터도 웹브라우저에서 파일을 utf-8로 열어야 문제가 생기지 않는 것</strong>이다.<br>
-  <br>그래서 우리는 웹브라우저에게 어떠한 웹 페이지를 열 때는 utf-8로 열어라는
-  명령을 하기 위해 다음 문장처럼 사용하면 된다.<br><br>
-  <strong>(meta charset="문자체계(utf-8 등등")</strong><br><br>
+      <br><br><br>
+      <h3>2. table,tr,td 태그</h3>
+      <br>
+      또 다른 부모자식태그로는 <strong>표를 작성는 <u>table태그</u>가 존재한다.</strong>
+      <br>이 table태그의 경우에는 총 <strong>3가지가 같이 다니는 태그</strong>로 구성되어 있는데
+      <br><br><strong>
+      (table)<br>
+        (tr)<br>
+          (td)abcd(/td)<br>
+          (td)~~%(/td)<br>
+        (/tr)<br>
+        (tr)<br>
+          (td)efgh(/td)<br>
+          (td)~~%(/td)<br>
+        (/tr)<br>
+        (tr)<br>
+          (td)ijkl(/td)<br>
+          (td)~~%(/td)<br>
+        (/tr)<br>
+      (/table)<br></strong>
+      <br>
+      이러한 형식으로 구성되어 있다.<br>
+      즉, 이를 활용하여 표를 만들 수 있는 것인데, 아래에 표를 작성해보도록 하겠다.<br>
+      <br>
+      <table>
+        <tr>
+          <td>head</td>
+          <td>98.1%</td>
+        </tr>
+        <tr>
+          <td>body</td>
+          <td>97.9%</td>
+        </tr>
+        <tr>
+          <td>html</td>
+          <td>99.1%</td>
+        </tr>
+      </table>
+      <br><br>
+      <img src="table.png" width="50%">
 
-  위 문장에서 charset은 <strong>캐릭터셋</strong>이라고도 부르며<br>
-  <strong>char = 문자</strong><br>
-  <strong>set = 규칙</strong><br>
-  즉, <strong>~~형식으로 문서를 읽어라고 브라우저에게 얘기를 해주는 것</strong>이다.<br><br>
-
-
-  <h3>3. 본문을 설명하는 head와 본문 body그리고 html</h3><br>
-
-  html의 제일 위에 항상 위치해 있는<br>
-  <strong>본문의 제목이 무엇인지 설명하는 <u>title</u>태그와<br>
-  본문이 어떤 입력 방식으로 저장되어 있다고 설명하는 <u>meta charset="~~"</u>태그<br></strong>
-  이 두 태그는 모두 <strong>본문(body)이 무엇인지 설명하는 부분으로써
-  <u>(head)(/head) 태그</u></strong>를 사용해 주기로 약속한 것이다.<br><br>
-
-  그 다음 등장하는 <strong>본문이라고 볼 수 있는 모든 부분들</strong>은 <br>
-  <strong><u>(body)(/body) 태그</u></strong>를 사용해 주어야 한다.<br><br>
-  <strong>즉, <u>html에 있는 모든 태그</u>는 head 태그 또는 body 태그 둘 중 하나 아래에 놓이게 되는 것</strong>이다.<br>
-  그렇기에 head, body태그는 고위직 태그라고 말할 수 있다.<br><br>
-  마지막으로, 이 고위직 태그인 <strong><u>head,body까지 감싸는 단 하나의 최고위층 태그</u>가 있는데
-  <br>이것이 바로 <u>(html)(/html)</u>이라는 태그이다.</strong><br><br>
-  그리고, <strong>이 html 태그 위에 <u>"이 문서는 html이다"</u>라는 것을 설명해주기 위해</strong>
-  <br><strong>관용적으로 <u>(!doctype html)</u>이라고 써주면 된다.</strong><br><br>
-
-
-
-  <h3>[HTML 태그의 제왕]</h3><br>
-
-
-  <h3>1. 링크를 의미하는 'a'태그</h3>
-  <strong>a태그</strong>는 배가 정박할 때 사용하는 닻을 의미하는
-  <strong>'anchor'의 첫글자</strong>를 딴 것이다.
-  <br>즉, ''정보의 바다에 정박하다'라는 의미로 사용되기 시작한 것이다.<br><br>
-
-
-  <h3>2. 'a' 태그와 그의 속성 href=""</h3>
-  그렇다면, 이제 아래 HTML단어에 이 용어의 정의를 설명하는 페이지로
-  옮겨 갈 수 있는 링크를 걸어보도록 하겠다.<br><br>
-
-  <a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank"
-  title="HTML에 대한 정의(specification of HTML)">HTML</a>
-  <br>
-  위에 HTML글자를 클릭하면, 그 용어를 설명하는 페이지로 넘어가는 것을 볼 수 있다.<br>
-  여기서, 우리는 <strong>(a herf="주소")(/a)태그</strong>를 사용하여
-  <strong>설명하고 싶은 단어를 감싸주면 되는 것</strong>이다.<br><br>
-
-  <strong>(a href="주소")링크를 걸어주고 싶은 단어(/a)</strong><br>
-  위의 형식처럼 말이다.<br>
-  그렇다면 a가 링크를 의미하는 태그라면, <strong> a의 옆에 있는 <u>href</u></strong>의
-  의미는 무엇일까?<br><br>
-
-  이는 다른 태그들과 마찬가지로 <strong>a태그에 대한 속성</strong>이며<br>
-  <strong>
-  h = 링크를 의미하는 <u>H</u>ypertext의 앞글자 h<br>
-  ref = 참조, 주소를 의미하는 <u>ref</u>rence의 앞글자 ref</strong><br><br>
-  즉, <u>링크에게 이 값을 참조해야 한다는 의미</u>로<br>
-  이 두개를 합쳐 <strong>href</strong>이라는 속성이 나오게 된 것이다.<br><br><br>
-
-
-  <h3>3. 'a' 태그의 두번째 속성 target="_blank"</h3>
-  만약 링크를 클릭했는데 <strong>새로운 탭에서 열리도록</strong> 만들고 싶다면<br>
-  <strong>target="_blank"</strong>이라는 속성을 사용하면 된다.<br><br><br>
-
-
-  <h3>4. 'a' 태그의 세번째 속성 title="링크를 설명해주는 말"</h3>
-  만약 링크를 클릭하기 전에, 그 링크가 무엇인지 툴팁으로 알고 싶다면 <br>
-  <strong>title="링크를 설명해주는 말"</strong>이라는 속성을 사용하면 된다.<br><br><br>
+      <br><br>즉, 위와 같이 표가 만들어지는 것이다.<br><br>
+      이 구성에 대해서 자세히 설명하자면 다음과 같다.<br>
+      표를 작성하기 위해 제일 <strong>머리와 꼬리가 되는 태그는 <u>table 태그</u></strong>이며<br>
+      테이블의 <strong> 행을 구분 짓는 태그는 <u>tr태그</u>로<br>
+      tr태그 속에 <u>td태그</u>를 사용함으로써 <u>왼쪽 열부터 순서대로 내용을 채워 나가는 것</u>이다.
+      </strong><br><br>
+      이렇게 tr태그 속에 td태그를 다 채웠다면, <br>
+      그 다음 <strong>새로운 tr태그를 시작함으로써
+      <u>또 다른 행을 점점 채워나가고</u>,
+      마찬가지로 <u>td태그를 그 속에 또 추가함으로써 열도 채워 나가는 것</u></strong>이다.<br>
+      이러한 과정을 다 거치고 <strong>표가 완성되고 나면 <u>마지막에 table 태그로
+      닫아주면서 표를 완성시키는 것</u>이다.</strong>
+      <br><br><br>
 
 
 
-  <h3>[웹사이트 완성]</h3><br>
-  웹사이트를 완성하기 위해서는 페이지를 만들어 주고 싶은 부분에 <strong>a태그를 사용</strong>하여
-  링크를 걸어주면 된다.<br>
-  새로운 사이트를 만들고 싶으면 에디터 왼쪽의 프로젝트에서 새로운 파일을 열면 된다.
+      <h3>[문서의 구조와 슈퍼스타들]</h3>
+      <br>
 
+
+      <h3>1. 제목을 표시하는 방법 - title태그를 사용</h3>
+      <br>title태그는 <strong>인터넷 창의 <u>제목</u></strong>으로 표시가 되는데,
+      <br>이 title태그는 웹페이지의 제목을 사용자에게 명시적으로 알려줄 수 있을 뿐만 아니라
+      <br>검색엔진과 같은 기계들은 이 title이라는 것을 책으로 치면 책 표지와 같은 정보로서 사용한다.
+      <br><br>
+
+
+      <h3>2. 웹페이지에서 문자가 깨지는 경우를 방지</h3><br>
+      에디터로 작성한 파일을 웹브라우저를 통해 열 때,<strong>파일에 작성한 문자와 실제로 출력되는 문자가<br>
+      다른 경우</strong>를 종종 마주칠 때 있다. 이는, 컴퓨터가 문자를<br>
+      utf-8과 같은 <strong>여러가지 입력체계의 약속을 정하고 있기 때문</strong>이다.<br>
+      만약 에디터로 편집할 때, <strong>우리가 utf-8이라는 입력체계로 작성을하고 저장을 했다면,<br>
+      컴퓨터도 웹브라우저에서 파일을 utf-8로 열어야 문제가 생기지 않는 것</strong>이다.<br>
+      <br>그래서 우리는 웹브라우저에게 어떠한 웹 페이지를 열 때는 utf-8로 열어라는
+      명령을 하기 위해 다음 문장처럼 사용하면 된다.<br><br>
+      <strong>(meta charset="문자체계(utf-8 등등")</strong><br><br>
+
+      위 문장에서 charset은 <strong>캐릭터셋</strong>이라고도 부르며<br>
+      <strong>char = 문자</strong><br>
+      <strong>set = 규칙</strong><br>
+      즉, <strong>~~형식으로 문서를 읽어라고 브라우저에게 얘기를 해주는 것</strong>이다.<br><br>
+
+
+      <h3>3. 본문을 설명하는 head와 본문 body그리고 html</h3><br>
+
+      html의 제일 위에 항상 위치해 있는<br>
+      <strong>본문의 제목이 무엇인지 설명하는 <u>title</u>태그와<br>
+      본문이 어떤 입력 방식으로 저장되어 있다고 설명하는 <u>meta charset="~~"</u>태그<br></strong>
+      이 두 태그는 모두 <strong>본문(body)이 무엇인지 설명하는 부분으로써
+      <u>(head)(/head) 태그</u></strong>를 사용해 주기로 약속한 것이다.<br><br>
+
+      그 다음 등장하는 <strong>본문이라고 볼 수 있는 모든 부분들</strong>은 <br>
+      <strong><u>(body)(/body) 태그</u></strong>를 사용해 주어야 한다.<br><br>
+      <strong>즉, <u>html에 있는 모든 태그</u>는 head 태그 또는 body 태그 둘 중 하나 아래에 놓이게 되는 것</strong>이다.<br>
+      그렇기에 head, body태그는 고위직 태그라고 말할 수 있다.<br><br>
+      마지막으로, 이 고위직 태그인 <strong><u>head,body까지 감싸는 단 하나의 최고위층 태그</u>가 있는데
+      <br>이것이 바로 <u>(html)(/html)</u>이라는 태그이다.</strong><br><br>
+      그리고, <strong>이 html 태그 위에 <u>"이 문서는 html이다"</u>라는 것을 설명해주기 위해</strong>
+      <br><strong>관용적으로 <u>(!doctype html)</u>이라고 써주면 된다.</strong><br><br>
+
+
+
+      <h3>[HTML 태그의 제왕]</h3><br>
+
+
+      <h3>1. 링크를 의미하는 'a'태그</h3>
+      <strong>a태그</strong>는 배가 정박할 때 사용하는 닻을 의미하는
+      <strong>'anchor'의 첫글자</strong>를 딴 것이다.
+      <br>즉, ''정보의 바다에 정박하다'라는 의미로 사용되기 시작한 것이다.<br><br>
+
+
+      <h3>2. 'a' 태그와 그의 속성 href=""</h3>
+      그렇다면, 이제 아래 HTML단어에 이 용어의 정의를 설명하는 페이지로
+      옮겨 갈 수 있는 링크를 걸어보도록 하겠다.<br><br>
+
+      <a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank"
+      title="HTML에 대한 정의(specification of HTML)">HTML</a>
+      <br>
+      위에 HTML글자를 클릭하면, 그 용어를 설명하는 페이지로 넘어가는 것을 볼 수 있다.<br>
+      여기서, 우리는 <strong>(a herf="주소")(/a)태그</strong>를 사용하여
+      <strong>설명하고 싶은 단어를 감싸주면 되는 것</strong>이다.<br><br>
+
+      <strong>(a href="주소")링크를 걸어주고 싶은 단어(/a)</strong><br>
+      위의 형식처럼 말이다.<br>
+      그렇다면 a가 링크를 의미하는 태그라면, <strong> a의 옆에 있는 <u>href</u></strong>의
+      의미는 무엇일까?<br><br>
+
+      이는 다른 태그들과 마찬가지로 <strong>a태그에 대한 속성</strong>이며<br>
+      <strong>
+      h = 링크를 의미하는 <u>H</u>ypertext의 앞글자 h<br>
+      ref = 참조, 주소를 의미하는 <u>ref</u>rence의 앞글자 ref</strong><br><br>
+      즉, <u>링크에게 이 값을 참조해야 한다는 의미</u>로<br>
+      이 두개를 합쳐 <strong>href</strong>이라는 속성이 나오게 된 것이다.<br><br><br>
+
+
+      <h3>3. 'a' 태그의 두번째 속성 target="_blank"</h3>
+      만약 링크를 클릭했는데 <strong>새로운 탭에서 열리도록</strong> 만들고 싶다면<br>
+      <strong>target="_blank"</strong>이라는 속성을 사용하면 된다.<br><br><br>
+
+
+      <h3>4. 'a' 태그의 세번째 속성 title="링크를 설명해주는 말"</h3>
+      만약 링크를 클릭하기 전에, 그 링크가 무엇인지 툴팁으로 알고 싶다면 <br>
+      <strong>title="링크를 설명해주는 말"</strong>이라는 속성을 사용하면 된다.<br><br><br>
+
+
+
+      <h3>[웹사이트 완성]</h3><br>
+      웹사이트를 완성하기 위해서는 페이지를 만들어 주고 싶은 부분에 <strong>a태그를 사용</strong>하여
+      링크를 걸어주면 된다.<br>
+      새로운 사이트를 만들고 싶으면 에디터 왼쪽의 프로젝트에서 새로운 파일을 열면 된다.
+
+    </div>
+  </div>
 </body>
 </html>
