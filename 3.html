@@ -56,6 +56,17 @@
      #grid #article{
        padding-left:25px;
      }
+     @media(max-width:800px){
+       #grid{
+         display: block;
+       }
+       ol{
+         border-right: none;
+       }
+       h1 {
+         border-bottom: none;
+       }
+     }
  </style>
 </head>
 
@@ -64,8 +75,8 @@
   <div id="grid">
     <ol>
       <li><a href="1 - About HTML.html" target="-blank" title="HTML에 관한 설명" >HTML</a></li>
-      <li><a href="2 - About CSS.html" title="CSS에 관한 설명">CSS</a></li>
-      <li><a href="3.html" target="_blank" title="JavaScript에 관한 설명" id="active">JavaScript</a></li>
+      <li><a href="2 - About CSS.html" target="_blank" title="CSS에 관한 설명">CSS</a></li>
+      <li><a href="3.html" title="JavaScript에 관한 설명" id="active">JavaScript</a></li>
     </ol>
  <div id="article">
     <h2>JavaScript</h2>

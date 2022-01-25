@@ -38,27 +38,48 @@
       text-align: center;
       color:red;
     }
+    /*-----------------id선택자 활용방법------------------*/
     #active {
       color: red;
     }
     p{
       line-height: 230%;
     }
+    /*-----------------class선택자 활용방법----------------*/
     .midtitle {
       font-size: 24px;
       color: red;
     }
-    #grid{
-      display: grid;
-      grid-template-columns: 150px 1fr;
-    }
-    #grid ol{
-      padding-left: 33px;
-      font-style: italic;
-    }
-    #grid #article{
-      padding-left:25px;
-    }
+    /*----------------그리드 활용 방법
+    그리드 활용 위해서는 display:grid;조건은 피수-------------------*/
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+    /*----------------------모든 ol태그가 아닌
+     그리드 아래에 있는 ol태그에만 적용된다는 의미---------*/
+      #grid ol{
+        padding-left: 33px;
+        font-style: italic;
+      }
+    /*----------------------그리드 아래에 있는
+    id선택자 article에 대해서 언급한다는 의미인데,
+    굳이 그리드 선택자를 같이 적어줄 필요는 없음---------*/
+      #grid #article{
+        padding-left:25px;
+      }
+      /*-------------미디어쿼리 활용 방법------------*/
+      @media(max-width:800px){
+        #grid{
+          display: block;
+        }
+        ol{
+          border-right: none;
+        }
+        h1 {
+          border-bottom: none;
+        }
+      }
    /* CSS내에서 사용하는 주석 */
   </style>
   <!--
@@ -82,14 +103,7 @@
       <li><a href="2 - About CSS.html" title="CSS에 관한 설명" id="active">CSS</a></li>
       <li><a href="3.html" target="_blank" title="JavaScript에 관한 설명">JavaScript</a></li>
     </ol>
-    <!--
-    <h1><a href="index.html" target="_blank" title="WEB의 대표 페이지"><font color="red">WEB</font></a></h1>
-    <ol>
-      <li><a href="1.html" target="-blank" title="HTML에 관한 설명"><font color="red">HTML</font></a></li>
-      <li><a href="2.html" title="CSS에 관한 설명"><font color="red">CSS</font></a></li>
-      <li><a href="3.html" target="_blank" title="JavaScript에 관한 설명"><font color="red">JavaScript</font></a></li>
-    </ol>
-    -->
+
     <div id="article">
 
       <h2>CSS</h2>
@@ -388,6 +402,44 @@
         얼마나 그 <strong>기술을 채택하고 있는가에 대한 통계를 보여주는 서비스</strong>이다.<br>
       - 코딩을 할때 그 코드가 얼마나 영향력이 있는가에 대한 통계를 보여주기에 <strong>매우 중요한
         사이트</strong>라고 할 수 있다.<br>
+      </p>
+      <br><br><br>
+
+
+
+      <h3 class="midtitle">[미디어쿼리]</h3>
+
+
+      <h3>1. 반응형 디자인과 미디어쿼리란?</h3>
+      <p>
+      - <strong>반응형 디자인</strong>이란 <strong>화면의 크기</strong>에 따라 <strong>웹페이지의
+        각 요소들이 반응</strong>해서 동작하게 되는 것<br>
+      - <strong>미디어쿼리</strong>는 이 <strong>반응형 디자인을 순수한 웹과 CSS를
+        통해 구현</strong>하는 핵심적인 개념<br>
+        <br><br>
+
+
+
+      <h3>2. 미디어 쿼리의 코드</h3>
+      <p>
+      - 미디어 쿼리 역시 <strong>CSS 내에서 사용이 되며</strong> 상황에 따라
+        화면에 띄어지는 모습을 변화시킬 수 있다.<br>
+      - 만약, 어떠한 <strong>요소를 화면의 크기가 800px 보다 커질때 화면에 보여지지
+        않게</strong> 하고싶다고 가정하자<br>
+        이 말은, 즉 <strong>화면의 크기가 최소한 800px이라는 것</strong>과 같은 것이다.<br>
+        그렇다면 아래와 같은 코드를 적어주면 된다.<br>
+
+      -   @media(min-width:800px){<br>
+              선택자{<br>
+              display:none;<br>
+              }<br>
+            }<br>
+
+      - 위의 코드에서 알 수 있듯이, <strong>미디어 쿼리</strong>를 활성화 시키는 코드는<br>
+        <strong>@media()로 시작되는 것</strong>을 알 수 있다.<br>
+      - 또한, @media()의 <strong>괄호 안에 들어가는 것은 전제조건을,</strong><br>
+        @media()의 중괄호 안에 들어가있는 <strong>선택자에 대해서는 실행문을</strong>
+        적어주는 것을 알 수 있다.
       </p>
     </div>
   </div>
