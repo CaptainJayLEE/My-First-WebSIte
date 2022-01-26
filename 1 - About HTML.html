@@ -3,71 +3,7 @@
 <head>
 <title>WEB1 - html</title>
 <meta charset="utf-8">
-  <style>
-  body{
-    margin:0;
-    padding: 10px;
-  }
-  a {
-    color:black;
-    text-decoration: none;
-  }
-  li{
-    font-size: 20px;
-    text-decoration: underline;
-  }
-  ol{
-    color:black;
-    border-right: 1px solid gray;
-    width: 100px;
-    margin: 0;
-    padding: 20px
-  }
-  h1 {
-    font-size:50px;
-    text-align: center;
-    border-bottom: 1px solid gray;
-    margin: 0;
-    padding: 20px
-  }
-  h2 {
-    font-size:40px;
-    text-align: center;
-    color:red;
-  }
-  #active {
-    color: red;
-  }
-  p{
-    line-height: 230%;
-  }
-  .midtitle {
-    font-size: 24px;
-    color: red;
-  }
-  #grid{
-    display: grid;
-    grid-template-columns: 150px 1fr;
-  }
-  #grid ol{
-    padding-left: 33px;
-    font-style: italic;
-  }
-  #grid #article{
-    padding-left:25px;
-  }
-  @media(max-width:800px){
-    #grid{
-      display: block;
-    }
-    ol{
-      border-right: none;
-    }
-    h1 {
-      border-bottom: none;
-    }
-  }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1><a href="index.html" target="_blank" title="WEB의 대표 페이지">WEB</a></h1>
@@ -78,6 +14,7 @@
         <li><a href="3.html" target="_blank" title="JavaScript에 관한 설명">JavaScript</a></li>
       </ol>
    <div id="article">
+
       <h2>HTML</h2>
 
       <h3> [HTML의 기본적인 4가지 태그]</h3>
@@ -148,10 +85,11 @@
       <u>속성을 통해서 더 많은 의미를 부가</u>할 수 있게 된 것이다.</strong>
       <br><br>
       <img src="html.jpg" width="50%">
+      <br><br><br>
 
 
 
-      <br><br><br><h3>[부모,자식태그]</h3><br>
+    <h3>[부모,자식태그]</h3><br>
 
 
       <h3>1. li,ul,ol 태그</h3>
@@ -180,9 +118,9 @@
       <br>이, l의 약자는<strong>list</strong>이며
       <br>ol은 <strong><u>Ordered List</u></strong>의 약자이다.
       <br>반면, ul은 <strong><u>부정을 뜻하는 un이 들어간 unordered list</u></strong>의 약자이다.
-
-
       <br><br><br>
+
+
       <h3>2. table,tr,td 태그</h3>
       <br>
       또 다른 부모자식태그로는 <strong>표를 작성는 <u>table태그</u>가 존재한다.</strong>

@@ -4,84 +4,10 @@
   <title>WEB2 - CSS</title>
   <meta charset="utf-8">
   <!--
-  아래 9열부터 12열까지 CSS 코드가 어떻게 사용되는지 알 수 있는 부분이다.
+  아래 태그는 css를 정리한 파일인 style.css를 불러와 웹브라우저에게
+  css를 사용하게끔 명령하는 link태그이다.
   -->
-  <style>
-    body{
-      margin:0;
-      padding: 10px;
-    }
-    a {
-      color:black;
-      text-decoration: none;
-    }
-    li{
-      font-size: 20px;
-      text-decoration:underline;
-    }
-    ol{
-      color:black;
-      border-right: 1px solid gray;
-      width: 100px;
-      margin: 0;
-      padding: 20px
-    }
-    h1 {
-      font-size:50px;
-      text-align: center;
-      border-bottom: 1px solid gray;
-      margin: 0;
-      padding: 20px
-    }
-    h2 {
-      font-size:40px;
-      text-align: center;
-      color:red;
-    }
-    /*-----------------id선택자 활용방법------------------*/
-    #active {
-      color: red;
-    }
-    p{
-      line-height: 230%;
-    }
-    /*-----------------class선택자 활용방법----------------*/
-    .midtitle {
-      font-size: 24px;
-      color: red;
-    }
-    /*----------------그리드 활용 방법
-    그리드 활용 위해서는 display:grid;조건은 피수-------------------*/
-      #grid{
-        display: grid;
-        grid-template-columns: 150px 1fr;
-      }
-    /*----------------------모든 ol태그가 아닌
-     그리드 아래에 있는 ol태그에만 적용된다는 의미---------*/
-      #grid ol{
-        padding-left: 33px;
-        font-style: italic;
-      }
-    /*----------------------그리드 아래에 있는
-    id선택자 article에 대해서 언급한다는 의미인데,
-    굳이 그리드 선택자를 같이 적어줄 필요는 없음---------*/
-      #grid #article{
-        padding-left:25px;
-      }
-      /*-------------미디어쿼리 활용 방법------------*/
-      @media(max-width:800px){
-        #grid{
-          display: block;
-        }
-        ol{
-          border-right: none;
-        }
-        h1 {
-          border-bottom: none;
-        }
-      }
-   /* CSS내에서 사용하는 주석 */
-  </style>
+  <link rel="stylesheet" href="style.css">
   <!--
 즉, CSS코드란, <style> </style> 태그 안에 원하는 영역을 지정하고 {} 중괄호를 사용
 하여 마지막에는 ; 세미콜론으로 마무리 짓는 것을 알 수 있다.
@@ -441,6 +367,28 @@
         @media()의 중괄호 안에 들어가있는 <strong>선택자에 대해서는 실행문을</strong>
         적어주는 것을 알 수 있다.
       </p>
+      <br><br><br>
+
+
+
+      <h3 class="midtitle">[각각의 웹페이지 요소들을 한꺼번에 바꾸기]</h3>
+
+
+      <h3>1. 중복의제거와 합치는방법</h3>
+      <p>
+      <strong>a.</strong> 모든 웹페이지에 <Stong>중복되고 있는 CSS코드를 style태그를 제외한채
+       별도의 파일로 뺀다</strong><br>
+      <strong>b.</strong> 그 파일의 명은 <strong>파일명.css</strong>로 정하면 된다.<br>
+      <strong>c.</strong> 이후, <strong>각 웹페이지에 style태그까지 삭제</strong> 한 후<BR>
+        그곳에 '웹브라우저야 커서가 깜빡거리고 있는 위치에는 <strong>(파일명.CSS)</strong>라고 하는<br>
+        별도의 파일에 저장되어있는 <strong>css를 다운로드 받아서 원래 여기에 그 코드가 있었던<br>
+        것처럼 동작해'라고 명령</strong>해준다.<br>
+      <strong>d.</strong> 이 명령이 바로 <strong> link태그 이다.</strong><br>
+      <strong>e.</strong> 이 link태그는 <strong>어떤 css파일과 연결되어 있는지 웹브라우저에게 알려주는 것이다.</strong><br>
+      <Strong>f.</strong> link 태그의 사용법은 아래와 같다.<br>
+        (link rel="stylesheet" href="파일명.css")<br>
+      <strong>g.</strong> 위에 처럼 <strong>link태그를 통해서 웹페이지가 어떤 css파일과 연결되어 있는지 웹브라우저에게 알려주는 것이다.</strong>
+    </p>
     </div>
   </div>
 </body>
